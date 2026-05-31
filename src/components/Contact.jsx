@@ -30,7 +30,7 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="sticky top-0 z-40 h-screen pt-16 bg-gray-950">
+    <section id="contact" className="section-sticky z-40 pt-16 bg-gray-950 border-b border-cyan-500/20">
       <div className="h-full flex items-center justify-center px-4">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">

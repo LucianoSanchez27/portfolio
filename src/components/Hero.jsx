@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="sticky top-0 z-[5] h-screen pt-16 bg-gray-950">
+    <section id="hero" className="section-sticky z-[5] pt-16 bg-gray-950 border-b border-cyan-500/20">
       <div className="h-full flex items-center justify-center px-4">
         <div className="text-center max-w-2xl">
         <div className="w-28 h-28 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-cyan-500/20">

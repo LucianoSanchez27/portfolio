@@ -15,7 +15,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="sticky top-0 z-20 h-screen pt-16 bg-gray-950">
+    <section id="skills" className="section-sticky z-20 pt-16 bg-gray-950 border-b border-cyan-500/20">
       <div className="h-full flex items-center justify-center px-4">
         <div className="max-w-5xl mx-auto w-full">
           <h2 className="text-3xl font-bold mb-12 text-center">

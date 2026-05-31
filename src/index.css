@@ -3,3 +3,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  overflow: visible;
+}
+
+#root {
+  position: relative;
+}
+
+.section-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+}
