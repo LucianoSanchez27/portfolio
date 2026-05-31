@@ -9,30 +9,34 @@ const placeholderProjects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-4">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center">
-          <span className="text-cyan-400">Mis</span> proyectos
-        </h2>
-        <p className="text-gray-500 text-center mb-12">
-          Proyectos en los que estoy trabajando — pronto estarán disponibles
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {placeholderProjects.map((project) => (
-            <div
-              key={project.id}
-              className="group relative p-6 rounded-xl border border-gray-800 bg-gray-900/50 hover:border-cyan-500/50 transition-all duration-300"
-            >
-              <div className="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center text-2xl">
-                {['📁', '⚙️', '📊', '✍️', '🐦', '🚀'][project.id - 1]}
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
-              <p className="text-gray-400 text-sm mb-4">{project.desc}</p>
-              <span className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-medium">
-                Próximamente
-              </span>
+    <section id="projects" className="sticky top-0 z-10 h-screen pt-16 bg-gray-950">
+      <div className="h-full flex flex-col items-center justify-center px-4">
+        <div className="max-w-5xl mx-auto w-full flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-4 text-center">
+            <span className="text-cyan-400">Mis</span> proyectos
+          </h2>
+          <p className="text-gray-500 text-center mb-8">
+            Proyectos en los que estoy trabajando — pronto estarán disponibles
+          </p>
+          <div className="w-full overflow-y-auto max-h-[calc(100vh-13rem)]">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {placeholderProjects.map((project) => (
+                <div
+                  key={project.id}
+                  className="group relative p-6 rounded-xl border border-gray-800 bg-gray-900/50 hover:border-cyan-500/50 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 mb-4 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center text-2xl">
+                    {['📁', '⚙️', '📊', '✍️', '🐦', '🚀'][project.id - 1]}
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
+                  <p className="text-gray-400 text-sm mb-4">{project.desc}</p>
+                  <span className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-medium">
+                    Próximamente
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

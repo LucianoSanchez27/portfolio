@@ -9,16 +9,11 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <footer className="py-6 border-t border-gray-800 text-center text-sm text-gray-600">
-        © {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.
-      </footer>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </>
   )
 }

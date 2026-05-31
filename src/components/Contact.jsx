@@ -30,34 +30,39 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-4 bg-gray-900/50">
-      <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          <span className="text-cyan-400">Contacto</span>
-        </h2>
-        <p className="text-gray-400 mb-10">
-          ¿Tienes un proyecto en mente o quieres colaborar? Estoy abierto a nuevas oportunidades.
-        </p>
-        <div className="flex items-center justify-center gap-6 mb-12">
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-3 rounded-lg border border-gray-700 hover:border-cyan-500 text-gray-300 hover:text-white transition-colors"
-            >
-              {link.icon}
-              <span className="text-sm">{link.label}</span>
+    <section id="contact" className="sticky top-0 z-[5] h-screen pt-16 bg-gray-950">
+      <div className="h-full flex items-center justify-center px-4">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            <span className="text-cyan-400">Contacto</span>
+          </h2>
+          <p className="text-gray-400 mb-10">
+            ¿Tienes un proyecto en mente o quieres colaborar? Estoy abierto a nuevas oportunidades.
+          </p>
+          <div className="flex items-center justify-center gap-6 mb-12">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 rounded-lg border border-gray-700 hover:border-cyan-500 text-gray-300 hover:text-white transition-colors"
+              >
+                {link.icon}
+                <span className="text-sm">{link.label}</span>
+              </a>
+            ))}
+          </div>
+          <p className="text-gray-500 text-sm">
+            También puedes escribirme directamente a{' '}
+            <a href="mailto:tu@email.com" className="text-cyan-400 hover:underline">
+              tu@email.com
             </a>
-          ))}
+          </p>
+          <p className="mt-16 text-gray-600 text-xs">
+            © {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.
+          </p>
         </div>
-        <p className="text-gray-500 text-sm">
-          También puedes escribirme directamente a{' '}
-          <a href="mailto:tu@email.com" className="text-cyan-400 hover:underline">
-            tu@email.com
-          </a>
-        </p>
       </div>
     </section>
   )

@@ -1,7 +1,8 @@
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16">
-      <div className="text-center px-4 max-w-2xl">
+    <section id="hero" className="sticky top-0 z-40 h-screen pt-16 bg-gray-950">
+      <div className="h-full flex items-center justify-center px-4">
+        <div className="text-center max-w-2xl">
         <div className="w-28 h-28 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-4xl font-bold text-white shadow-lg shadow-cyan-500/20">
           TN
         </div>
@@ -30,6 +31,7 @@ export default function Hero() {
             Ver proyectos
           </a>
         </div>
+      </div>
       </div>
     </section>
   )
