@@ -9,7 +9,7 @@ const placeholderProjects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="sticky top-0 z-10 h-screen pt-16 bg-gray-950">
+    <section id="projects" className="sticky top-0 z-30 h-screen pt-16 bg-gray-950">
       <div className="h-full flex flex-col items-center justify-center px-4">
         <div className="max-w-5xl mx-auto w-full flex flex-col items-center">
           <h2 className="text-3xl font-bold mb-4 text-center">

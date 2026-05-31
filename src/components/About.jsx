@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="sticky top-0 z-30 h-screen pt-16 bg-gray-950">
+    <section id="about" className="sticky top-0 z-10 h-screen pt-16 bg-gray-950">
       <div className="h-full flex items-center justify-center px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">
