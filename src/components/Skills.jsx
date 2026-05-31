@@ -1,7 +1,7 @@
 const skillCategories = [
   {
     title: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'TypeScript'],
+    skills: ['JavaScript', 'TypeScript', 'React', 'HTML', 'CSS', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
@@ -9,7 +9,7 @@ const skillCategories = [
   },
   {
     title: 'Herramientas',
-    skills: ['Git', 'GitHub', 'VS Code', 'Docker', 'Linux', 'Figma'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Linux'],
   },
 ]
 

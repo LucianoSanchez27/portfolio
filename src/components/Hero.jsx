@@ -7,7 +7,7 @@ export default function Hero() {
         </div>
         <h1 className="text-5xl sm:text-6xl font-bold mb-4">
           <span className="text-white">Hola, soy </span>
-          <span className="text-cyan-400">Tu Nombre</span>
+          <span className="text-cyan-400">Luciano</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-400 mb-3">
           Desarrollador Full Stack
